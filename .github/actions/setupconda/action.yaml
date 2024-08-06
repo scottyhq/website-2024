@@ -5,6 +5,7 @@ runs:
   using: "composite"
   steps:
     - name: Retrieve CryoCloud Conda-Lock File
+      shell: bash -le {0}
       run: |
         cd conda
         wget https://github.com/CryoInTheCloud/hub-image/blob/9d2485c39e1033694eaefe597c9a0a414cc623b9/conda-linux-64.lock
